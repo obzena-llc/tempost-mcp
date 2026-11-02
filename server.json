@@ -3,8 +3,12 @@
   "name": "io.tempost/tempost",
   "title": "Tempost",
   "description": "Schedule and publish YouTube videos from AI agents. Facebook and Instagram coming soon.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://tempost.io/mcp/",
+  "repository": {
+    "url": "https://github.com/obzena-llc/tempost-mcp",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://tempost.io/assets/logo-512.png",
