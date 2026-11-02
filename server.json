@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.tempost/tempost",
+  "title": "Tempost",
+  "description": "Schedule and publish YouTube videos from AI agents. Facebook and Instagram coming soon.",
+  "version": "1.0.2",
+  "websiteUrl": "https://tempost.io/mcp/",
+  "icons": [
+    {
+      "src": "https://tempost.io/assets/logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://tempost.io/assets/logo.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.tempost.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional when your client supports OAuth. Otherwise 'Bearer <key>' with a Tempost API key from app.tempost.io > Agents.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
